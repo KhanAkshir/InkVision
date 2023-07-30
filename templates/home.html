@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Flask App</title>
+    
+</head>
+<body>
+
+    <div class="form">
+        <p><b>Welcome to our website, where we bring you the best in digit recognition! To ensure optimal results, please keep the following rules in mind:</b></p>
+        <p>1. White Background: To enhance the clarity and visibility of the digits, 
+            it is recommended to have a white background for your images. 
+            This ensures a clean and consistent environment for digit recognition.</p>
+        <p><a href="https://www.photoroom.com/tools/white-background" target="_blank"><b>Click here</b></a> for white background</p>
+        <!-- <a href="https://www.photoroom.com/tools/white-background" target="_blank"><b>BG_REMOVER</b></a> -->
+        <p>2. Square Image Shape: For improved accuracy, please ensure that your images have a square shape.
+            This will help our system better analyze and recognize the digits you submit.</p>
+    </div>
+    <div class="form">
+        <h3>Kindly upload image of only single digit number</h3>
+    <form  method="POST" action="/predictdata" enctype="multipart/form-data">
+
+        <input type="file" name="image" id="avatar" required="required">
+
+        <img src=none id="pic",name="pict" width="100px"height="100px" alt="1.png" >
+        <br>
+
+        <input type="submit" value="submit" id="sub">
+    </form>
+    
+
+    <h2>
+        Answer <u  class="ans">{{result}}</u>
+     </h2>
+    </div>
+
+   
+    
+    <script>
+        let input=document.getElementById("avatar")
+        let pic=document.getElementById("pic")
+
+        input.onchange=function(){
+            pic.src=URL.createObjectURL(input.files[0])
+        }
+      
+    </script>
+
+
+</body>
+</html>

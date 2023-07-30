@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+}
+
+.Akshir{
+  color: white;
+}
+
+.search{
+  padding: 10px;
+  border-radius: 100px;
+}
+
+/* #pic 
+{
+  background-color: black;
+  
+} */
+#sub
+{
+  padding: 10px;
+  border-radius: 100px;
+  border-color: white;
+ 
+  margin-top:20px;
+}
+#avatar
+{
+  border-color: white;
+  padding: 10px;
+  border-radius: 100px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.form
+{
+  width: 1000px;
+  height: 400px;
+  background-color: white;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.ans
+{
+  color: red;
+}

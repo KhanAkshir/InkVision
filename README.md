@@ -1,0 +1,1 @@
+"Developed 'INKVISION' – a computer vision project using the MNIST dataset. Implemented a deep learning model for accurate recognition of handwritten digits.

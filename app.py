@@ -37,20 +37,15 @@ def predict_datapoint():
         y_pred=model_clf.predict(img)
         # print(y_pred)
         ans=np.argmax(y_pred)
-        # print(f"-----------------------  dsfjsdgfk2344hsdf   {ans}")
+       
 
         # Process the image array as needed (e.g., perform calculations, apply filters, etc.)
 
         # Return the processed image or perform further actions
         return render_template('home.html',result=ans)
     else:
-        return render_template('home.html')
-   
-
-
-   
-    
-   
+        return render_template('home.html',result=0)
+      
 
 if __name__=="__main__":
     app.run(host="0.0.0.0" )
